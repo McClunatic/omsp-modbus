@@ -8,7 +8,8 @@ packages = [{include = "omsp_modbus"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-
+crcmod = "1.7"
+pymodbus = {version = "3.0.0dev4", allow-prereleases = true, extras = ["serial"]}
 
 [build-system]
 requires = ["poetry-core"]
